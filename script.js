@@ -13,6 +13,9 @@ var hardBtn = document.querySelector("#hardBtn");
 eassyBtn.addEventListener("click", function() {
     hardBtn.classList.remove("selected");
     eassyBtn.classList.add("selected");
+    colors = generateRandomColors(3);
+    pickedColor = pickColor;
+    colorDisplay.textContent = pickedColor
 });
 
 hardBtn.addEventListener("click", function() {
